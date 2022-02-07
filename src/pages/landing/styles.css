@@ -1,0 +1,44 @@
+@media screen and (min-width: 1000px){
+    .app__landing-image{
+        top: 0;
+        right: 0;
+        width: 60%;
+        position: absolute;
+        z-index: -1;
+    }
+    
+    .app__landing-textBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    .app__landing-textBox h1{
+        padding: 10rem 0 5rem 0;
+        font-size: 50px;
+        font-weight: 800;
+        text-align: start;
+        color: var(--color-black);
+    }
+    
+}
+
+@media screen and (max-width: 1000px){
+    .app__landing-image{
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .app__landing-textBox h1{
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+    
+        font-size: 40px;
+        font-weight: 800;
+        text-align: center;
+        color: var(--color-black);
+    }
+}

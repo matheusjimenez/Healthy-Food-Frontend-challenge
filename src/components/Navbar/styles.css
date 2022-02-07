@@ -1,0 +1,138 @@
+.app__navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+
+    padding: 1rem 2rem;
+}
+
+.app__navbar-links-container{
+    margin-left: 30%;
+    display: flex;
+    flex-direction: row;
+}
+
+.app__navbar h2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--color-green);
+
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.app__navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.app__navbar-links li{
+    margin: 0 1rem;
+    cursor: pointer;
+
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.app__navbar-links li:hover{
+    color: var(--color-dark_green);
+}
+
+.app__navbar-register{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    border-radius: 10px;
+    cursor: pointer;
+    
+    background-color: var(--color-white);
+    padding: 0.7rem 0.7rem;
+}
+
+.app__navbar-register a{
+    font-weight: 700;
+    color: var(--color-green);
+
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.app__navbar-register a:hover{
+    border-bottom: 1px solid var(--color-green);
+}
+
+.app__navbar-smallscreen {
+    display: none;
+}
+
+.app__navbar-smallscreen_overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-green);
+    transition: 0.5s ease;
+
+    flex-direction: column;
+    z-index: 5;
+
+    text-align: start;
+}
+
+.app__navbar-smallscreen_overlay ul li{
+    list-style: circle;
+    margin: 20px;
+}
+
+.app__navbar-smallscreen_overlay .app__navbar-register{
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40%;
+    margin-top: 2rem;
+}
+
+.app__navbar-smallscreen_overlay .overlay__close{
+    font-size: 27px;
+    color: var(--color-white);
+    cursor: pointer;
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+@media screen and (max-width: 1000px){
+    .app__navbar-links-container{
+        display: none;
+    }
+
+    .app__navbar-smallscreen{
+        display: flex;
+    }
+
+    .app__navbar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+    
+        padding: 1rem 2rem;
+    }
+
+    .app__navbar h2{
+        font-weight: 900;
+    }
+}
